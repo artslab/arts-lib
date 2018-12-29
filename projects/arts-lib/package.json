@@ -4,5 +4,21 @@
     "peerDependencies": {
         "@angular/common": "^7.0.0",
         "@angular/core": "^7.0.0"
-    }
+    },
+    "author": {
+        "name": "artslab",
+        "email": "dev@artslab.info",
+        "url": "https://artslab.info"
+    },
+    "description": "Angulars component library",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/artslab/arts-lib"
+    },
+    "keywords": [
+        "angular",
+        "components",
+        "tutorial",
+        "library"
+    ]
 }
