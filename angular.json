@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "arts-lib": {
+      "root": "projects/arts-lib",
+      "sourceRoot": "projects/arts-lib/src",
+      "projectType": "library",
+      "prefix": "al",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/arts-lib/tsconfig.lib.json",
+            "project": "projects/arts-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/arts-lib/src/test.ts",
+            "tsConfig": "projects/arts-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/arts-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/arts-lib/tsconfig.lib.json",
+              "projects/arts-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "my-lib"

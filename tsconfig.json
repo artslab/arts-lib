@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "arts-lib": [
+        "dist/arts-lib"
+      ],
+      "arts-lib/*": [
+        "dist/arts-lib/*"
+      ]
+    }
   }
 }

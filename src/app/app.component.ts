@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-lib';
+
+  /**
+   * Click logger
+   *
+   */
+  log(event: MouseEvent) {
+    console.log(event);
+  }
 }
